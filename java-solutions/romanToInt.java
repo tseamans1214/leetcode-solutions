@@ -28,8 +28,9 @@ class Solution {
                 int nextVal = romanCharValue(s.charAt(i+1));
                 if (currentVal >= nextVal) { // if the current value > next value, add current to sum
                     sum += currentVal;
-                } else {
+                } else { // Subtract current value from next value, add result to sum
                     sum += nextVal - currentVal;
+                    // increment index by 1 so it doesn't repeat on same value
                     i++;
                 }
             }
