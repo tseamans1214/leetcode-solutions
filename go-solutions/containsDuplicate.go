@@ -1,4 +1,4 @@
-unc containsDuplicate(nums []int) bool {
+func containsDuplicate(nums []int) bool {
     // Create a map
     var intMap = make(map[int]int)
     // Loop through each number in array
